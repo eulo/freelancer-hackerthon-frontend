@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title></title>
+
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+</head>
+<body>
+
+  <div class='background-container'></div>
+
+
+
+
+    <div class='row'>
+
+      <div class='col-md-3 site-menu-container'>
+        <div class='site-menu'>
+          <div class='user-info'>
+            <div class='user-avatar'></div>
+            <p class='user-name'>Zia Word</p>
+            <p class='user-location'>Sydney, AU</p>
+          </div>
+          <div class='site-logo'></div>
+          <ul>
+            <li class='active'>Create a team</li>
+            <li>Team Projects</li>
+            <li>My Teams</li>
+            <li>Activity</li>
+            <li>Messages</li>
+          </ul>
+
+          <div class='stats'>
+            <div class='stat-item'>
+              <p class='title'>Balance</p>
+              <p class='value'>$7425</p>
+            </div>
+            <div class='stat-item'>
+              <p class='title'>Active Teams</p>
+              <p class='value'>57</p>
+            </div>
+            <div class='stat-item'>
+              <p class='title'>Projects</p>
+              <p class='value'>752</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class='col-md-3 filter-container'>
+        <!-- current team -->
+        <div class='panel'>
+          <div class='panel-heading'>
+            <h5>Team</h5>
+          </div>
+          <div class='panel-body team-output'>
+            <p>Start inviting to get your team started!</p>
+          </div>
+        </div> 
+
+        <!-- results filter -->
+        <div class='panel results-filter'>
+          <div class='panel-heading'>
+            <h5>Filter Results</h5>
+          </div>
+          <div class='panel-body'>
+            <form>
+
+              <label>Skills</label>
+              <div class='typeahead-search'>
+                <div class='typeahead-cont input-group'>
+                  <input class="typeahead form-control" type="text" name="skills" placeholder="Search skills...">
+
+                  <span class="input-group-btn">
+                    <button type='button' class='btn btn-primary typeahead-add'>Add Skill</button>
+                  </span>
+
+                </div>
+              </div>
+              <div class='skills-output'></div>
+
+              <label for='rate-slider'>Hourly rate</label>
+              <div class='input-group'>
+                <input id='rate-slider' type='text' class='form-control range-slider' value='' data-slider-min='0' data-slider-max='400' data-slider-step='5' data-slider-value='[0,100]'/> 
+              </div>
+
+              <label for='rating-slider'>Rating</label>
+              <div class='input-group'>
+                <input id='rating-slider' type='text' class='form-control range-slider' value='' data-slider-min='0' data-slider-max='5' data-slider-step='1' data-slider-value='[0,5]'/> 
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Online only 
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-success">Find peeps</button>
+
+            </form> 
+          </div>
+        </div>
+      </div>
+
+      <div class='col-md-6 results-container'>
+        <div class='results-output'></div>   
+      </div>
+
+    </div>
+  
+
+  <script src="/assets/js/app.js"></script>
+
+</body>
+</html>

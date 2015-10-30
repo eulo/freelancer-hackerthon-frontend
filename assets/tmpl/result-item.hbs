@@ -1,0 +1,44 @@
+<div class='panel animated bounceInRight'>
+  <div class='row panel-body'>
+    <div class='col-sm-7 user-info'>
+      <div class='avatar' style='background-image:url({{avatar_cdn}});'></div>
+
+      <h3>{{username}}</h3>
+
+      <div class='user-rating' data-star_rating='{{star_rating}}'>
+        <div class='user-rating-total'>
+          <div class='user-rating-progress'></div> 
+        </div>
+        <a href="/u/{{username}}.html" class="user-rating-label" target="_blank">
+          {{reputation.entire_history.reviews}} Reviews
+        </a>
+      </div>
+
+      <p class='jobs-list'>
+      {{#each jobs}} 
+        <span class="label label-primary">{{name}}</span>
+      {{/each}}
+      </p>
+
+      <p class='hourly-rate'>
+        ${{hourly_rate}} USD per hour
+      </p>
+
+    </div>
+    <div class='col-sm-5'>
+      <div class='quick-info'>
+    
+      </div>
+      <div class='quick-actions'>
+        <button type="button" class="btn btn-info chat-button" data-user_id='{{id}}'>
+          <i class='glyphicon glyphicon-comment'></i>
+          Chat
+        </button>
+        <button type="button" class="btn btn-success invite-button" data-user_id='{{id}}'>
+          <i class='glyphicon glyphicon-plus'></i>
+          Invite
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

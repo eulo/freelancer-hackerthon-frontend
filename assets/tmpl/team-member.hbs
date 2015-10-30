@@ -1,0 +1,16 @@
+<div class='team-member animated bounceInLeft'>
+  <button type="button" class="btn btn-default btn-sm remove-member"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+  <div class='row'>
+    <div class='col-sm-3'>
+      <div class='team-avatar' style='background-image:url({{avatar_cdn}});'></div>
+    </div>
+    <div class='col-sm-9'>
+      <p class='team-username'>{{username}} <span class="label label-warning">Pending</span></p>
+      <p class='jobs-list'>
+      {{#each jobs}} 
+        <span class="label label-primary">{{name}}</span>
+      {{/each}}
+      </p>
+    </div>
+  </div>
+</div>

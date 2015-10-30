@@ -1,0 +1,122 @@
+.typeahead-search {
+  @include clearfix;
+  position:relative;
+
+  &> .typeahead-cont {
+    display: block;
+    @include clearfix;
+
+    .twitter-typeahead {
+      float:left;
+    }
+    .input-group-btn {
+      float: left;
+    }
+
+    input[type=text] {
+      height: 34px;
+      width: 170px;
+    }
+  }
+
+  &> button {
+    
+  }
+
+  .typeahead,
+  .tt-query,
+  .tt-hint {
+    height: 24px;
+    padding: 8px 12px;
+    font-size: 18px;
+    line-height: 24px;
+    outline: none;
+  }
+
+  .typeahead {
+    background-color: #fff;
+    border-right:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .typeahead:focus, button.focus {
+    border-color: #f86800;
+  }
+  button.focus {
+    background: #f86800;
+    color:#F0F0F0;
+  }
+
+  .tt-query {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  }
+
+  .tt-hint {
+    color: #999
+  }
+
+  h3.tt-title {
+    color: #7A7A7A;
+    padding: 5px 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin:0;
+    background: white;
+  }
+
+  .tt-menu {
+    width: 100%; // full width minus border difference
+    padding: 8px 0;
+    margin-top:-5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+            box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  }
+
+  .tt-suggestion {
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: white;
+    cursor: pointer;
+    &:hover {
+      background: #ddd;
+    }
+  }
+
+  .tt-suggestion.tt-cursor {
+    cursor: pointer;
+    background-color: #ddd;
+    p {
+      color: #fff !important;
+    }
+  }
+
+  .tt-suggestion p {
+    margin: 0;
+  }
+
+  .typeahead-cont {
+    input[type=text] {
+      font-size:13px;
+    }
+  }
+  .tt-cursor {
+    &:hover {
+      background: #ddd;
+    }
+  }
+  h3 {
+    font-size:12px;
+  }
+  p {
+    font-size:12px;
+  }
+}
